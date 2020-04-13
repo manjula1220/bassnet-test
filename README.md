@@ -17,7 +17,7 @@ you can see the application in browser with portnumber 4200.
 
 
 # Note:
-Mobile case not handled
-UI Icons and Fonts.
+Mobile Responsiveness, UI Icons and Fonts not handled
+
 
 # mainly concentrated on Functionality.
