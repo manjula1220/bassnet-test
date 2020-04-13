@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.container-fluid{
+    padding: 0px!important;
+}
+
+/* .toolbarCls {
+    background-color: #2C3E61;
+    color: #ffffff;
+    cursor: pointer;
+} */
+
+.sideNav {
+    /* height: 100%; */
+    width: 64px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background-color: #111; */
+    overflow-x: hidden;
+    /* padding-top: 20px; */
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+/* .sidenavChild{
+    background-color: #F5F5F5;
+} */
+.sidenavbars{
+    height: 100vh;
+}
+.row-width {
+    width: 100%;
+}
+.active {
+    color:red;
+}
+
+.col-1 {
+    flex: 0 0 7%!important;
+}
+/* .toolbarCls a {
+    color: #ffffff;
+} */
+
+.sideNav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sideNav ul li {
+    padding: 30px 0 0 0;
+}
+
+ul li:first-child {
+    padding: 0 0 0 0;
+}
+.toolbarCls a {
+    text-decoration: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.container {
+    margin: 0;
+    padding: 0;
+}
+/* , a:hover */
+a {
+    color: #FFF;
+}
+.container {
+    margin: 0px!important;
+}
