@@ -1,0 +1,39 @@
+<ng-container>
+  <div class="container-fluid">
+    <div class="row row-width sidenavbars">
+      <div class="sideNav toolbarCls col-1">
+        <ul>
+          <li>
+            <a [routerLink]="['./procurement']">
+              <mat-icon>shopping_cart</mat-icon> <br>
+              <span>Procurement</span>
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['./projects']">
+              <mat-icon>list</mat-icon> <br>
+              <span>Project</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-11">
+        <!-- <div class="row">
+          <div class="col-lg-9">
+          </div>
+        </div> -->
+        <div class="row">
+          <!-- <div class="col-lg-2 sidenavChild sidenavbars">
+            
+          </div> -->
+          <div class="col-lg-12">
+            <router-outlet></router-outlet>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</ng-container>

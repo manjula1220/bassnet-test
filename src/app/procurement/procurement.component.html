@@ -1,0 +1,37 @@
+<div class="container">
+
+<div class="row">
+
+    <div class="col-lg-2 sidenavChild sidenavbars">
+        <h3> Procurement</h3>
+        <div class="row pointer" (click)="togglePi()">
+            <div class="col-lg-9">
+                <mat-icon>bar_chart</mat-icon> PI
+            </div>
+            <div class="col-lg-3">
+                <mat-icon [hidden]="!isExpanded">keyboard_arrow_right</mat-icon>
+                <mat-icon [hidden]="isExpanded">keyboard_arrow_down</mat-icon>
+            </div>
+        </div>
+        <div class="row" [hidden]="isExpanded">
+            <div class="col-lg-12">
+                <ul>
+                    <li><a [routerLink]="['./pi']"> Chart 1</a></li>
+                    <li><a [routerLink]="['./pi']"> Chart 2</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10">
+                <a [routerLink]="['./research']">
+                    <mat-icon>bar_chart</mat-icon> My Research
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-10">
+        <app-ng-dynamic-breadcrumb></app-ng-dynamic-breadcrumb>
+        <router-outlet></router-outlet>
+    </div>
+</div>
+</div>
