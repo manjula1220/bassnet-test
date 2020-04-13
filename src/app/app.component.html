@@ -1,0 +1,70 @@
+<!-- <div [class.alternative] = "otherTheme"> -->
+<div [class.alternative]="otherTheme">
+  <div class="mat-app-background">
+    <mat-toolbar class="toolbarCls row">
+      <div class="col-lg-1 col-sm-1">
+        <mat-icon>menu</mat-icon>
+      </div>
+      <div class="col-lg-6 col-sm-6">
+        <div class="row">
+          <a [routerLink]="['/home']" class="col-lg-2 col-sm-2">
+            <mat-icon>home</mat-icon>
+          </a>
+          <a href="#">
+            <div class="col-lg-2 col-sm-2">Fleet</div>
+          </a>
+          <a href="#">
+            <div class="col-lg-2 col-sm-2">Work</div>
+          </a>
+          <a [routerLink]="['/statistics']" class="col-lg-2 col-sm-2"> Statistics</a>
+        </div>
+      </div>
+      <div class="col-lg-5 col-sm-5">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4"></div>
+          <div class="col-lg-1">
+            <mat-icon>notifications_none</mat-icon>
+          </div>
+          <div class="col-lg-1">
+            <mat-icon>settings</mat-icon>
+          </div>
+          <div class="col-lg-5">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="favicon.ico" alt="">
+              </div>
+              <div class="col-lg-7">
+                <div class="row">
+                  <div class="col-lg-10">
+                    <!-- <div class="col-lg-12"> -->
+                    <div style="line-height: 15px;">John Smith</div>
+                    <!-- </div> -->
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <span class="user-role">Accounting</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 dropdown-cls">
+                <span class="dropdown-container">
+                  <span class=" dropdown-menu-label dropdown-arrow-down" aria-hidden="true">▼</span>
+                  <ul class="dropdown-menu-items right" role="menu">
+                    <li role="menuitem" (click)="changeTheme('dark')"><span class="dot darker"></span> <span> Dark </span></li>
+                    <li role="menuitem" (click)="changeTheme('light')"><span class="dot lighter"></span> Light</li>
+                    <li role="menuitem">
+                      <mat-icon>input</mat-icon> Sign out
+                    </li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+  </div>
+</div>
